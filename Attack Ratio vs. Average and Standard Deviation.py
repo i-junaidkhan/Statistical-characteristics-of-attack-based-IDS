@@ -3,7 +3,7 @@ import numpy as np
 
 names = ['Timestamp', 'CAN_ID', 'DLC', 'DATA[0]', 'DATA[1]', 'DATA[2]', 'DATA[3]', 'DATA[4]', 'DATA[5]', 'DATA[6]', 'DATA[7]', 'Flag']
 
-df = pd.read_csv("G:\Korea University\Car-Hacking Data set\Testing(Car Hacking Dataset)\DoS_dataset\DoS_dataset.csv", names=names)
+df = pd.read_csv("G:\Korea University\Car_hacking_dataset\DoS_dataset.csv", names=names)
 can_id = df['CAN_ID'].values.tolist()
 flag_id = df['Flag'].values.tolist()
 
