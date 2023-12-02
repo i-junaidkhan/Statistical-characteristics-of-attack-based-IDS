@@ -4,7 +4,7 @@ import numpy as np
 names = ['Timestamp', 'CAN_ID', 'DLC', 'DATA[0]', 'DATA[1]', 'DATA[2]', 'DATA[3]', 'DATA[4]', 'DATA[5]', 'DATA[6]',
          'DATA[7]', 'Flag']
 
-df = pd.read_csv("D:\Korea University\Car-Hacking Data set\Testing(Car Hacking Dataset)\Fuzzy_dataset\Fuzzy_dataset.csv",
+df = pd.read_csv("G:\Korea University\Car_hacking_dataset\DoS_dataset.csv",
                  names=names)
 can_id = df['CAN_ID'].values.tolist()
 flag_id = df['Flag'].values.tolist()
@@ -150,8 +150,5 @@ while counter < 25000:
 
 #mydf = pd.DataFrame(list(zip(attack_ratio,Error_rate)), columns = ['E^i (attack_ratio) ','Error_rate'])
 
-#mydf.index = np.arange(1,len(mydf)+1)
-#mydf.index.name = 'i'
 
-#mydf.to_excel (r'D:\Excel for code\Fuzzy(Attack_ratio VS Error_rate_1000).xlsx', header=True)
 
